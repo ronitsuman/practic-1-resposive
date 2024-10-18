@@ -237,72 +237,148 @@
 
 /* brand section end here */
 
-/* product-carousel start here  */
-.product-carousel{
-    max-width: 1440px;
-    margin: auto;
+/* slider-section start here  */
+.slider{
+    width: 1440px;
+    height: 647px;
+    border: 1px solid;
     display: flex;
     align-items: center;
-    padding: 2rem;
-    justify-content: center;
+    padding: 48px 160px;
     flex-direction: column;
-    gap: 1rem;
+    gap: 48px;
+    padding-left: 160px;
 }
-.product-tittle{
+.slider .slider-tittle{
+    display: flex;
+    align-items: center;
     width: 1120px;
-    display: flex;
-    align-items: center;
+    border: 1px solid ;
     justify-content: space-between;
-    border: 1px solid;
-    
+    gap: 10px;
 }
-.product-icons{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-   
+.slider .slider-tittle h2{
+    font-size: 40px;
+    font-weight: 500;
 }
-.product-card .cards{
-    width: 262px;
-    height: 459px;
-    border: 1px solid;
-}
-.cards{
+.slider .slider-tittle .slider-icons{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    flex-direction: column;
-}
-.card-img-container{
-    width: 262px;
-    height: 359px;
-}
-.card-img-container img{
-    width: 100%;
-    height: 100%;
-}
-.card-content{
+    gap: 2px ;
     
-    display: flex;
-    align-items: start;
-    gap: 5px;
-    text-align: left;
-    flex-direction: column;
 }
-.card-content p{
-    font-weight: 600;
-    font-size: 16px;
+.slider .slider-container{
+    width: 1280px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow-x: scroll;
+    overflow-y: scroll;
 
 }
-.product-card{
+.slider .slider-card{
+    width: 262px;
+    height: 459px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid;
+    position: relative;
+}
+.slider .slider-card .img-container{
+    width  : 262px ;
+    height : 349px ;
+    border : 1px solid ;
+
+}
+.slider .slider-container .slider-card .heart-container {
+    background-color : white ;
+    color : black ;
+    position : absolute ;
+    top : 1rem ;
+    right: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+
+    
+}
+.slider .slider-card .img-container img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+
+}
+.slider .slider-card .tags .text{
+    background-color: white ;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    width: 50px;
+    height: 24px;
+    left: 1rem;
+}
+.slider-card a{
+    width: 230px;
+    background-color: #171D28;
+    color: white;
+    padding: 8px 24px;
+    text-decoration: none;
+    position: absolute;
+    top: 280px;
+    left: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    overflow: hidden;
 }
-/* product-carousel ends here  */
+.slider-card a:hover{
+    font-size: 1.3rem;
+    background-color: #171d2881;
+}
+
+.slider-content{
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.slider-content .slider-star i{
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+}
+
+.slider-container{
+
+}
+
+
+/* slider-section ends here  */
+
+/* scroll-bar start here */
+::-webkit-scrollbar{
+    height: 5px;
+    width: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #377DFF;
+    border-radius: 5px;
+
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+/* scroll-bar ends here */
 
 /* media queries start here */
 
@@ -450,6 +526,11 @@
     
     }
     /* brand-section end here */
+    /* product-carousel start here */
+    .product-carousel{
+        min-width: 450px;
+    }
+    /* product-carousel end here */
     
 }
 /* media queries ends here */
